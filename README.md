@@ -1,5 +1,7 @@
 # PyTorch’s Dynamic Graphs (Autograd)
 
+![Gradient propagation Data Structures](https://github.com/ZachWolpe/pyTorch-directed-acyclic-graph/blob/main/neural_net_schematic/expr-run.webp)
+
 The acyclical graphs design powering modern deep learning frameworks. `PyTorch` (and `Tensorflow`) build dynamic graphs at runtime, allowing for the creation of complex, dynamic models. Notably, this saves RAM space, reduces setup complexity (by needing to declare the entire graph before training); allows for control flow/conditionals & allows for the creation of dynamic models (e.g. RNNs, GANs, etc.).
 
 This is the supporting code, the full article is available here)[https://medium.com/@zachcolinwolpe/pytorchs-dynamic-graphs-autograd-96ecb3efc158]
