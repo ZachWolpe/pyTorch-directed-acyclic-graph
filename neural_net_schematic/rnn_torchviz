@@ -1,0 +1,46 @@
+digraph {
+	graph [size="12,12"]
+	node [align=left fontname=monospace fontsize=10 height=0.2 ranksep=0.1 shape=box style=filled]
+	6439357088 [label="
+ (1, 10)" fillcolor=darkolivegreen1]
+	6439290528 [label=LinearBackward0]
+	6439305120 -> 6439290528
+	6439305120 [label=ReluBackward0]
+	6439300704 -> 6439305120
+	6439300704 [label=LinearBackward0]
+	6439290912 -> 6439300704
+	6439290912 [label=ReluBackward0]
+	6439301712 -> 6439290912
+	6439301712 [label=LinearBackward0]
+	6439300992 -> 6439301712
+	6439356448 [label="linear_relu_stack.0.weight
+ (512, 784)" fillcolor=lightblue]
+	6439356448 -> 6439300992
+	6439300992 [label=AccumulateGrad]
+	6439301760 -> 6439301712
+	6439356528 [label="linear_relu_stack.0.bias
+ (512)" fillcolor=lightblue]
+	6439356528 -> 6439301760
+	6439301760 [label=AccumulateGrad]
+	6439291008 -> 6439300704
+	6100250096 [label="linear_relu_stack.2.weight
+ (512, 512)" fillcolor=lightblue]
+	6100250096 -> 6439291008
+	6439291008 [label=AccumulateGrad]
+	6439291056 -> 6439300704
+	4572077808 [label="linear_relu_stack.2.bias
+ (512)" fillcolor=lightblue]
+	4572077808 -> 6439291056
+	6439291056 [label=AccumulateGrad]
+	6439297632 -> 6439290528
+	6439356688 [label="linear_relu_stack.4.weight
+ (10, 512)" fillcolor=lightblue]
+	6439356688 -> 6439297632
+	6439297632 [label=AccumulateGrad]
+	6439304304 -> 6439290528
+	6439355808 [label="linear_relu_stack.4.bias
+ (10)" fillcolor=lightblue]
+	6439355808 -> 6439304304
+	6439304304 [label=AccumulateGrad]
+	6439290528 -> 6439357088
+}
